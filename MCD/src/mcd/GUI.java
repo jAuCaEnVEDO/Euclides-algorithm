@@ -27,7 +27,7 @@ public class GUI extends JFrame {
     private JPanel panel2 = new JPanel();
     private JPanel text = new JPanel();
     private JPanel mcd = new JPanel();
-    private ImageIcon imagen = new ImageIcon("C:/Users/Acevedo/Desktop/Games/Material UD/Semestre 2/Teoria de numeros/MCD/src/mcd/back.png");
+    private ImageIcon imagen = new ImageIcon("src/mcd/back.png");
     private JLabel image = new JLabel();
     private String pross = "";
     private JLabel process = new JLabel("<html><body>" + pross + "</html></body>");
@@ -129,6 +129,7 @@ public class GUI extends JFrame {
         maxCom.setHorizontalAlignment(SwingConstants.CENTER);
         maxCom.setEnabled(false);
         maxCom.addActionListener((ActionEvent ae) -> {
+            numb.organice();
             pross = numb.mcd();
             process.setText("<html><body style=text-align:center;>" + pross + "</html></body>");
         });

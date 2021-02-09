@@ -183,6 +183,9 @@ public class GUI extends JFrame {
         number.setText("");
         process.setText("");
         array.clear();
+        numb.matriz.clear();
+        numb.comb.clear();
+        numb.enteros.clear();
         maxCom.setEnabled(false);
     }
 }
